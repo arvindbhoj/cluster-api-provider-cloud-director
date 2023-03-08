@@ -8,10 +8,11 @@ package vcdsdk
 import (
 	"crypto/tls"
 	"fmt"
-	"k8s.io/klog"
 	"net/http"
 	"strings"
 	"sync"
+
+	"k8s.io/klog"
 
 	swaggerClient "github.com/vmware/cloud-provider-for-cloud-director/pkg/vcdswaggerclient"
 	"github.com/vmware/go-vcloud-director/v2/govcd"
@@ -59,7 +60,6 @@ func GetUserAndOrg(fullUserName string, clusterOrg string, currentUserOrg string
 //  TODO: Make sure this function still works properly with no issues after refactor
 func (client *Client) RefreshBearerToken() error {
 	klog.Infof("Refreshing vcd client")
-
 	href := fmt.Sprintf("%s/api", client.VCDAuthConfig.Host)
 	client.VCDClient.Client.APIVersion = VCloudApiVersion
 

@@ -309,7 +309,6 @@ func (vm *VM) updateNicParameters(networks []map[string]interface{}, networkSect
 				networkSection.NetworkConnection[loopIndex].IsConnected = true
 				networkSection.NetworkConnection[loopIndex].IPAddress = ipAddress
 				networkSection.NetworkConnection[loopIndex].IPAddressAllocationMode = ipAllocationMode
-
 				// for IPAllocationModeNone we hardcode special network name used by vcd 'none'
 				if ipAllocationMode == types.IPAllocationModeNone {
 					networkSection.NetworkConnection[loopIndex].Network = types.NoneNetwork

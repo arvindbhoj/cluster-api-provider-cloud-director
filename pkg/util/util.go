@@ -10,11 +10,12 @@ import (
 	"encoding/json"
 	"encoding/xml"
 	"fmt"
-	"github.com/vmware/go-vcloud-director/v2/types/v56"
-	"github.com/vmware/go-vcloud-director/v2/util"
 	"io/ioutil"
 	"net/http"
 	"strings"
+
+	"github.com/vmware/cluster-api-provider-cloud-director/pkg/go-vcloud-director/v2/types/v56"
+	"github.com/vmware/cluster-api-provider-cloud-director/pkg/go-vcloud-director/v2/util"
 )
 
 // indentJsonBody indents raw JSON body for easier readability

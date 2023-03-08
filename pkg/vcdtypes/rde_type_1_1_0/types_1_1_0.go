@@ -1,6 +1,6 @@
 package rde_type_1_1_0
 
-import "github.com/vmware/cloud-provider-for-cloud-director/pkg/vcdsdk"
+import "github.com/vmware/cluster-api-provider-cloud-director/pkg/cloud-provider-for-cloud-director/pkg/vcdsdk"
 
 const (
 	CapvcdRDETypeVersion = "1.1.0"
